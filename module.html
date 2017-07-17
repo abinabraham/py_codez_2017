@@ -3,13 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>Angular JS</title>
-    <script src="angular.min.js"></script>
-        <script src="script.js"></script>
+    <script src="scripts/angular.min.js"></script>
+        <script src="scripts/script.js"></script>
 
 </head>
 <body ng-controller="myController">
     <div>
-        {{msg}}
+        Hey, {{user.firstName}}  {{user.lastName}}. {{msg}}
+    </div>
+    <div>
+        Name : {{country.name}}
+    </div>
+    <div>
+        Capital : {{country.capital}}
+    </div>
+    <div>
+        <img src="{{country.flag}}" alt="{{country.name}}" style="width:150px; height:50px"/>
     </div>
 
 </body>
