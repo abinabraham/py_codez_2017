@@ -16,6 +16,39 @@
         <input type="text" ng-model="bindmsg">
         {{bindmsg}}
     </div>
+    <br/>
+
+    <table>
+        <tr>
+            <td>First Name : </td>
+            <td><input type="text" ng-model="user.firstName"></td>
+        </tr>
+        <tr>
+            <td>Last Name : </td>
+            <td><input type="text" ng-model="user.lastName"></td>
+        </tr>
+        <tr>
+            <td>Gender : </td>
+            <td><input type="text" ng-model="user.gender"></td>
+        </tr>
+
+    </table>
+<br/>
+     <table>
+        <tr>
+            <td>First Name : </td>
+            <td>{{user.firstName}}</td>
+        </tr>
+        <tr>
+            <td>Last Name : </td>
+            <td>{{user.lastName}}</td>
+        </tr>
+        <tr>
+            <td>Gender : </td>
+            <td>{{user.gender}}</td>
+        </tr>
+
+    </table>
 
 </body>
 </html>

@@ -18,4 +18,12 @@ myApp.controller("myController", function($scope){
 
 var myApp1 = angular.module("myModel1",[]).controller("myController1", function($scope){
     $scope.message = "Two Way Data Binding";
+
+    var user = {
+        firstName:"Abin",
+        lastName:"Abraham",
+        gender : "Male",
+
+    }
+    $scope.user = user
 });
