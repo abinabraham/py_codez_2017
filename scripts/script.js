@@ -14,4 +14,8 @@ myApp.controller("myController", function($scope){
         flag:"images/flg.png"
     }
     $scope.country = country
-})
+});
+
+var myApp1 = angular.module("myModel1",[]).controller("myController1", function($scope){
+    $scope.message = "Two Way Data Binding";
+});
