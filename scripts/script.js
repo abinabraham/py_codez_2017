@@ -27,7 +27,7 @@ var myApp1 = angular.module("myModel1",[]).controller("myController1", function(
     }
     $scope.user = user
 
-    
+
 });
 
 var myApp2 = angular.module("myModel2",[]).controller("myController2", function($scope){
@@ -38,4 +38,20 @@ var myApp2 = angular.module("myModel2",[]).controller("myController2", function(
     {firstName:"Milan",lastName:"Khan",gender:"FeMale",salary:70000}]
 
     $scope.employees= employees
+
+    var technologies = [
+        {name:"Python",likes:0,dislikes:0},
+        {name:"C++",likes:0,dislikes:0},
+        {name:"Java",likes:0,dislikes:0}
+    ];
+
+    $scope.technologies = technologies;
+
+    $scope.incrementLike = function(technology){
+        technology.likes++;
+    };
+
+    $scope.incrementDislike = function(technology){
+        technology.dislikes++;
+    };
 });
