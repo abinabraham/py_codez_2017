@@ -26,4 +26,16 @@ var myApp1 = angular.module("myModel1",[]).controller("myController1", function(
 
     }
     $scope.user = user
+
+    
+});
+
+var myApp2 = angular.module("myModel2",[]).controller("myController2", function($scope){
+
+    var employees = [{firstName:"Jacob",lastName:"Davis",gender:"Male",salary:55000},
+    {firstName:"Riay",lastName:"Raven",gender:"FeMale",salary:52000},
+    {firstName:"Done",lastName:"Rekha",gender:"Male",salary:25000},
+    {firstName:"Milan",lastName:"Khan",gender:"FeMale",salary:70000}]
+
+    $scope.employees= employees
 });
